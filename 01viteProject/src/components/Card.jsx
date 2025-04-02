@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Card = ({channel,src}) => {
+const Card = ({channel,src,bgChange="#09090b"}) => {
   return (
     <>
-    <div className="mt-20 mx-auto max-w-md overflow-hidden rounded-xl bg-zinc-950 shadow-md md:max-w-2xl">
+    <div className="mt-20 mx-auto max-w-md overflow-hidden bg-[#09090b] rounded-xl shadow-md md:max-w-2xl"
+        style={{backgroundColor: bgChange}}>
         <div className="md:flex">
           <div className="md:shrink-0">
             <img
