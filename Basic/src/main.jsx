@@ -21,7 +21,7 @@ function MyApp(){
 // }
 
 const anotherElement = (
-    <a href="https://google.com" target='_blank'>Visit google</a>
+    <a className='text-blue-500 text-sm' href="https://google.com" target='_blank'>Visit google</a>
 )
 
 
@@ -36,9 +36,11 @@ const reactElement = React.createElement(
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
- 
-    reactElement
+    <>
+    <App/>
+    {reactElement}
   
+    </>
 )
 
 
