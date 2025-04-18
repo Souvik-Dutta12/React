@@ -1,5 +1,6 @@
 import React, {useState, useContext} from 'react'
-import UserContext from '../../../08miniContext/src/context/UserContext'
+import UserContext from '../context/UserContext'
+
 
 function Login() {
     const [username, setUsername] = useState('')
@@ -12,18 +13,20 @@ function Login() {
         setUser({username, password})
     }
   return (
-    <div>
-        <h2>Login</h2>
+    <div className='flex flex-col w-1/3 gap-3 font-semibold items-center justify-center mt-10 ml-120'>
+        <h2 className='text-4xl text-emerald-500'>Login Here ...</h2>
         <input type='text'
+        className='px-5 py-2 w-[70%] mt-7 border-2 text-xl text-slate-400 border-slate-400 rounded-xl focus:border-emerald-500 focus:outline-2'
         value={username}
         onChange={(e) => setUsername(e.target.value) }
-        placeholder='username'  />
+        placeholder='Username'  />
         {" "}
-        <input type='text' 
+        <input type='text'
+        className='px-5 py-2 w-[70%] mt-2 border-2 text-xl text-slate-400 border-slate-400 rounded-xl focus:border-emerald-500 focus:outline-2' 
         value={password}
         onChange={(e) => setPassword(e.target.value) }
-        placeholder='password'  />
-        <button onClick={handleSubmit}>Submit</button>
+        placeholder='Password'  />
+        <button className='bg-blue-500 text-white rounded-xl px-5 cursor-pointer hover:bg-blue-700 duration-700 py-3 w-40' onClick={handleSubmit}>Submit</button>
     </div>
   )
 }
