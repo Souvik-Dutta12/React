@@ -25,7 +25,9 @@ function App() {
   
 
   return (
+    <>
     <ThemeProvider value={{themeMode, lightTheme, darkTheme}}>
+      <div className='text-7xl text-white font-bold ml-30 mt-5'>Chai aur React -- 09 Change-Theme --</div>
       <div className="flex flex-wrap min-h-screen items-center">
           <div className="w-full">
               <div className="w-full max-w-sm mx-auto flex justify-end mb-4">
@@ -38,6 +40,7 @@ function App() {
           </div>
       </div>
     </ThemeProvider>
+    </>
   )
 }
 
