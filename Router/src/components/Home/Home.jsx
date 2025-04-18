@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 export default function Home() {
     return (
         <div className="mx-auto w-full max-w-7xl">
-            <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
+            <aside className="relative overflow-hidden text-white rounded-lg sm:mx-16 mx-2 sm:py-16">
                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
                     <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
-                        <h2 className="text-4xl font-bold sm:text-5xl">
-                            Download Now
-                            <span className="hidden sm:block text-4xl">Lorem Ipsum</span>
+                        <h2 className="text-5xl font-bold sm:text-7xl">
+                            Chai aur Code -- Router --
+                            <span className="hidden sm:block text-xl mt-5 text-emerald-500">Lorem Ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum doloremque numquam fugit id suscipit magni vero. Totam explicabo ratione repellat consequuntur deserunt omnis nobis natus! Fuga perferendis adipisci aliquid quidem.</span>
                         </h2>
 
                         <Link
-                            className="inline-flex text-white items-center px-6 py-3 font-medium bg-orange-700 rounded-lg hover:opacity-75"
+                            className="inline-flex text-white items-center px-4 py-3 text-xl font-medium bg-blue-500 rounded-xl hover:bg-blue-700 duration-700"
                             to="/"
                         >
                             <svg
@@ -31,16 +31,17 @@ export default function Home() {
                     </div>
                 </div>
 
-                <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                    <img className="w-96" src="https://i.ibb.co/5BCcDYB/Remote2.png" alt="image1" />
+                <div className="absolute top-32 inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
+                    <img className="w-96 rounded-xl shadow-lg shadow-gray-950/40" src="https://www.slrlounge.com/wp-content/uploads/2017/03/small-family-photo-pose.gif" alt="image1" />
                 </div>
             </aside>
 
-            <div className="grid  place-items-center sm:mt-20">
-                <img className="sm:w-96 w-48" src="https://i.ibb.co/2M7rtLk/Remote1.png" alt="image2" />
+            <div className="flex  justify-between gap-20 place-items-center mb-20">
+            <h1 className="  text-xl sm:text-xl text-slate-500 w-[50%] font-medium">Lorem Ipsum Yojo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, accusantium quas a, blanditiis quo, ex commodi itaque aliquam voluptate modi nulla ullam. Cumque totam aspernatur facilis architecto eligendi, distinctio officiis!</h1>
+                <img className="sm:w-96 w-48 rounded-xl shadow-lg shadow-gray-950/40" src="https://e3.365dm.com/22/09/2048x1152/skynews-denmark-royal-family_5913899.jpg?20220929101803" alt="image2" />
             </div>
 
-            <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">Lorem Ipsum Yojo</h1>
+            
         </div>
     );
 }
