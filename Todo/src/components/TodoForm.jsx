@@ -19,11 +19,11 @@ function TodoForm() {
           <input
               type="text"
               placeholder="Write Todo..."
-              className="w-full border border-black/10 rounded-l-lg px-3 outline-none duration-150 bg-white/20 py-1.5"
+              className="w-full border-2 border-gray-700 focus:border-blue-500 rounded-l-xl px-3 outline-none duration-150 bg-transparent text-xl text-slate-400 py-2"
               value={todo}
               onChange={(e) => setTodo(e.target.value)}
           />
-          <button type="submit" className="rounded-r-lg px-3 py-1 bg-green-600 text-white shrink-0">
+          <button type="submit" className="rounded-r-xl px-3 py-2 text-xl font-semibold bg-blue-500 hover:bg-blue-700 duration-700 cursor-pointer text-white shrink-0">
               Add
           </button>
       </form>
